@@ -1,0 +1,10 @@
+Dépose ici tes 3 vidéos avec ces noms exacts :
+  crea1.mp4   (1re vidéo, à gauche)
+  crea2.mp4   (vidéo centrale, la plus grande : mets ta meilleure)
+  crea3.mp4   (à droite)
+
+Format : MP4 H.264, 9:16, moins de 10 Mo chacune.
+Compression : ffmpeg -i source.mov -vf scale=720:-2 -c:v libx264 -crf 24 -preset slow -c:a aac -b:a 96k -movflags +faststart crea1.mp4
+
+Lien LinkedIn, titres et descriptions : bloc CONFIG en bas de index.html.
+Test local : ouvre index.html#edit et glisse une vidéo sur un cadre.
